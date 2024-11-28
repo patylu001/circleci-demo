@@ -21,8 +21,8 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
+      - run: pwd | echo
       - run: cd circleci-demo
-      - run: pwd | echo 
       - run: echo "Hello world" > hello.txt
       - run: |
           git config credential.helper 'cache --timeout=120'
