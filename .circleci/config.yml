@@ -28,7 +28,7 @@ jobs:
           git config user.name "patylu001"
           git add .
           git commit -m "Update via CircleCI"
-          git push -q https://patylu001:$GITHUB_TOKEN@github.com/patylu001/circleci-demo.git. I
+          git push -q https://patylu001:$GITHUB_TOKEN@github.com/patylu001/circleci-demo.git $CIRCLE_BRANCH
 workflows:
   build_and_test:
     jobs:
